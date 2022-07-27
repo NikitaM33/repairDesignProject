@@ -1,4 +1,4 @@
-.main {
+.bunner {
     padding: 12.1rem 0 13rem 0;
     background-image: url(../../assets/img/mainBanner.png);
     background-repeat: no-repeat;
@@ -6,28 +6,28 @@
     background-size: cover;
 }
 
-.main__bannerText {
+.bunner__bannerText {
     width: 27rem;
 }
 
-.main__bannerText h1,
-.main__bannerText span {
+.bunner__bannerText h1,
+.bunner__bannerText span {
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     font-weight: 400;
     line-height: 3rem;
 }
 
-.main__bannerText h1 {
+.bunner__bannerText h1 {
     margin: 0 0 1rem 0;
     color: var(--white);
 }
 
-.main__bannerText span {
+.bunner__bannerText span {
     color: var(--gold);
 }
 
-.main__bannerText p {
+.bunner__bannerText p {
     margin: 0 0 2rem 0;
     color: var(--white);
     font-weight: 300;
@@ -35,12 +35,12 @@
     line-height: 2rem;
 }
 
-.main__callToActionBtn {
+.bunner__callToActionBtn {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.main__calculateBtn {
+.bunner__calculateBtn {
     margin-right: 1.1rem;
 }
