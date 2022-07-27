@@ -1,16 +1,21 @@
 :root {
     --mainBlack: #131313;
     --gold: #E3B873;
+    --goldHover: #e3b873ef;
+    --goldActive: #e7bf7e;
     --white: #FFFFFF;
+    --whiteHover: #ffffff83;
+    --whiteActive: #ffffff9d;
     --text: #363636;
 
 
     /* Text sizes */
+    --I1: 1.1rem;
     --O87: 0.87rem;
 
 
     /* Radiuses */
-    --O5: 0.5rem;
+    --O7: 0.7rem;
     --O1: 0.1rem;
 
 

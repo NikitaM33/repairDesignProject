@@ -37,13 +37,44 @@ button {
     text-transform: uppercase;
 }
 
-.mainButton {
-    padding: 0.6rem 1.5rem;
-    color: var(--white);
+.mainButton,
+.borderedButton {
+    display: flex;
+    align-items: center;
+    max-width: 15rem;
+    height: 2.5rem;
+    padding: 0.9rem 1.5rem 0.6rem 1.5rem;
     font-weight: 400;
-    font-size: var(--O87);
+    font-size: var(--O7);
     text-transform: uppercase;
-    background: var(--gold);
     border-radius: var(--O1);
+    transition: var(--mainTransition);
+}
+
+.mainButton {
+    color: var(--white);
+    background: var(--gold);
     box-shadow: 0 0 15px rgba(227, 184, 115, 0.2);
+}
+
+.mainButton:hover {
+    background: var(--goldHover);
+}
+
+.mainButton:active {
+    background: var(--goldActive);
+}
+
+.borderedButton {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.borderedButton:hover {
+    background: var(--whiteHover);
+}
+
+.borderedButton:active {
+    background: var(--whiteActive);
 }
