@@ -1,0 +1,56 @@
+.header {
+    padding: 1.5rem 0;
+    background: var(--mainBlack);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    color: var(--gold);
+}
+
+.header__navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation li {
+    margin-right: 1vw;
+}
+
+.header__navigation li:last-child {
+    margin-right: 0;
+}
+
+.header__navigation li a {
+    color: var(--white);
+    transition: var(--mainTransition);
+}
+
+.header__navigation li a:hover {
+    color: var(--gold);
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone a {
+    color: var(--gold);
+    text-decoration: underline;
+    transition: var(--mainTransition);
+}
+
+.header__phone a:hover {
+    color: var(--white);
+}
+
+.header__phone button {
+    margin-left: 2.5rem;
+}

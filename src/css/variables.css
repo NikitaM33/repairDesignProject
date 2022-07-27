@@ -1,0 +1,27 @@
+:root {
+    --mainBlack: #131313;
+    --gold: #E3B873;
+    --white: #FFFFFF;
+    --text: #363636;
+
+
+    /* Text sizes */
+    --O87: 0.87rem;
+
+
+    /* Radiuses */
+    --O5: 0.5rem;
+    --O1: 0.1rem;
+
+
+    /* Transitions */
+    --mainTransition: all 0.4s;
+
+
+    /* Borders */
+    --articleBorder: 1px solid #E2E2E2;
+
+
+    /* Shadows */
+    --articleShadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
