@@ -1,0 +1,279 @@
+.projects {
+    background: var(--mainBlack);
+}
+
+.projects__textExemples {
+    flex: 0 0 40%;
+}
+
+.projects__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects__descr {
+    margin-bottom: 2.5rem;
+}
+
+.projects__descr h3,
+.projects__descr p {
+    font-weight: 400;
+}
+
+.projects__descr h3,
+.project__descrName {
+    max-width: 10rem;
+    font-family: 'Yeseva One', cursive;
+    line-height: 1.7rem;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.projects__descr p,
+.project__descrText {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: var(--O87);
+    color: var(--white);
+}
+
+.projects__descr p {
+    max-width: 25rem;
+    line-height: 1.6rem;
+}
+
+.projects__descrRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.project__part {
+    margin-right: 10rem;
+}
+
+.project__part:last-child {
+    margin-right: 0;
+}
+
+.project__descrText {
+    max-width: 7rem;
+}
+
+.projects__photosExemples {
+    padding: 5rem 0;
+}
+
+.projects__citys {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.projects__citys a {
+    position: relative;
+    font-family: 'Yeseva One', cursive;
+    font-size: var(--O87);
+    color: var(--lightGrey);
+    text-transform: uppercase;
+    transition: var(--mainTransition);
+}
+
+.projects__citys a:after {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: var(--mainTransition);
+}
+
+.projects__citys a:hover {
+    color: var(--gold);
+}
+
+.projects__citys a:hover:after {
+    width: 100%;
+}
+
+.projects__roomExample {
+    width: 100%;
+}
+
+.projects__roomExample img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects__control {
+    display: flex;
+    justify-content: center;
+}
+
+.projects__controlContainer {
+    display: flex;
+    align-items: center;
+}
+
+.projects__dots {
+    display: flex;
+    align-items: center;
+    margin: 0 1.8rem;
+}
+
+.projects__dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 0.9rem;
+    background: var(--lightGrey);
+    border-radius: 50%;
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+
+.projects__dot:hover {
+    background: var(--white);
+}
+
+.projects__arrow {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.projects__arrow:hover .projects__left,
+.projects__arrow:hover .projects__left:before,
+.projects__arrow:hover .projects__left:after,
+.projects__arrow:hover .projects__right,
+.projects__arrow:hover .projects__right:before,
+.projects__arrow:hover .projects__right:after{
+    background: var(--whiteHover);
+}
+
+.projects__left,
+.projects__right {
+    position: relative;
+    width: 2.5rem;
+    height: 1px;
+    background: var(--white);
+    transition: var(--mainTransition);
+}
+
+.projects__left:before,
+.projects__left:after,
+.projects__right:before,
+.projects__right:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 1px;
+    background: var(--white);
+    transition: var(--mainTransition);
+}
+
+.projects__left:before {
+    top: 4px;
+    left: -3px;
+    transform: rotate(45deg);
+}
+
+.projects__right:before {
+    top: 4px;
+    right: -3px;
+    transform: rotate(-45deg);
+}
+
+.projects__left:after {
+    top: -4px;
+    left: -3px;
+    transform: rotate(-45deg);
+}
+
+.projects__right:after {
+    top: -4px;
+    right: -3px;
+    transform: rotate(45deg);
+}
+
+.projects__onlineControl {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15rem;
+}
+
+.projects__onlineControl h4 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.projects__decor {
+    position: relative;
+}
+
+.projects__decor:before,
+.projects__decor:after {
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--gold);
+}
+
+.projects__decor:before {
+    top: 1rem;
+    left: -3rem;
+}
+
+.projects__decor:after {
+    top: 1rem;
+    right: -3rem;
+}
+
+.projects__video {
+    position: absolute;
+    top: 6rem;
+    width: 51rem;
+}
+
+.projects__playBtn {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4.2vw;
+    padding: 0 0 0 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    transform: translate(-50%, -50%), scale(1);
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.projects__playBtn:hover {
+    transform: scale(1.1);
+}
+
+.projects__videoWindow {
+    width: 100%;
+}
+
+.projects__videoWindow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

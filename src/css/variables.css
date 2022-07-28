@@ -1,12 +1,13 @@
 :root {
     --mainBlack: #131313;
     --gold: #E3B873;
-    --goldHover: #e3b873ef;
+    --goldHover: #e3b873e0;
     --goldActive: #e7bf7e;
     --white: #FFFFFF;
     --whiteHover: #ffffff83;
     --whiteActive: #ffffff9d;
-    --text: #363636;
+    --lightGrey: #ffffff62;
+    --text: #363636; 
 
 
     /* Text sizes */
@@ -20,7 +21,7 @@
 
 
     /* Transitions */
-    --mainTransition: all 0.4s;
+    --mainTransition: all 0.3s;
 
 
     /* Borders */
