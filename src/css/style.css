@@ -40,14 +40,15 @@ button {
 .mainButton,
 .borderedButton {
     display: flex;
+    justify-content: center;
     align-items: center;
     max-width: 15rem;
     height: 2.5rem;
     padding: 0.9rem 1.5rem 0.6rem 1.5rem;
     font-weight: 400;
-    font-size: var(--O7);
+    font-size: var(--R7);
     text-transform: uppercase;
-    border-radius: var(--O1);
+    border-radius: var(--R1);
     transition: var(--mainTransition);
 }
 

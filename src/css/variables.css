@@ -1,24 +1,26 @@
 :root {
     --mainBlack: #131313;
     --text: #363636;
+    --subText: #36363680;
+    --grey: #36363660;
     --gold: #E3B873;
     --goldHover: #e3b873e0;
     --goldActive: #e7bf7e;
     --white: #FFFFFF;
     --whiteHover: #ffffff83;
     --whiteActive: #ffffff9d;
-    --lightGrey: #ffffff62;
-    --text: #363636; 
+    --lightGrey: #cecece;
 
 
     /* Text sizes */
     --I1: 1.1rem;
     --O87: 0.87rem;
+    --O8: 0.8rem;
 
 
     /* Radiuses */
-    --O7: 0.7rem;
-    --O1: 0.1rem;
+    --R7: 0.7rem;
+    --R1: 0.1rem;
 
 
     /* Transitions */

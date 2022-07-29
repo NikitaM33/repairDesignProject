@@ -94,3 +94,101 @@
     font-size: 1.1rem;
     color: var(--text);
 }
+
+.onlineControl__contactForm {
+
+}
+
+.onlineControl__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlineControl__userData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: var(--O87);
+}
+
+.onlineControl__fieldset,
+.onlineControl__input {
+    
+    border: none;
+    outline: none;
+}
+
+.onlineControl__name {
+    font-size: var(--O8);
+    color: var(--subText);
+}
+
+.onlineControl__input {
+    width: 14rem;
+    margin-right: 2rem;
+    padding: 0.5rem 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--grey);
+}
+
+.onlineControl__input::placeholder {
+    font-size: var(--O87);
+    color: var(--text);
+}
+
+.onlineControl__submit {
+    width: 10rem;
+}
+
+.onlineControl__agreement {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--text);
+}
+
+.onlineControl__fancyCheckbox {
+    position: absolute;
+    display: flex;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-left: -1.5rem;
+    background: var(--gold);
+    border-radius: var(--R1);
+    cursor: pointer;
+}
+
+.onlineControl__fancyCheckbox:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url(../../assets/img/check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: var(--mainTransition);
+}
+
+.onlineControl__agreement input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.onlineControl__agreement input:checked + .onlineControl__fancyCheckbox:after {
+    opacity: 1;
+}
+
+.onlineControl__agreement input:focus + .onlineControl__fancyCheckbox {
+    box-shadow: 0 0 5px var(--subText);
+}
