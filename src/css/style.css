@@ -79,3 +79,47 @@ button {
 .borderedButton:active {
     background: var(--whiteActive);
 }
+
+.onlineControl__container,
+.repairTypes__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlineControl__decor,
+.repairTypes__decor {
+    position: relative;
+}
+
+.onlineControl__decor:before,
+.onlineControl__decor:after,
+.repairTypes__decor:before,
+.repairTypes__decor:after {
+    position: absolute;
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--gold);
+}
+
+.onlineControl__decor:before,
+.repairTypes__decor:before {
+    top: 1rem;
+    left: -3rem;
+}
+
+.onlineControl__decor:after,
+.repairTypes__decor:after {
+    top: 1rem;
+    right: -3rem;
+}
+
+.onlineControl h4,
+.repairTypes h4 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}

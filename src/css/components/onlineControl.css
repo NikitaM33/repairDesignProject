@@ -1,40 +1,9 @@
 .onlineControl__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: -21rem 0 0 0;
 }
 
 .onlineControl h4 {
-    font-family: 'Yeseva One', cursive;
-    font-weight: 400;
     color: var(--white);
-    text-transform: uppercase;
-}
-
-.onlineControl__decor {
-    position: relative;
-}
-
-.onlineControl__decor:before,
-.onlineControl__decor:after {
-    position: absolute;
-    content: '';
-    width: 2rem;
-    height: 1px;
-    background: var(--gold);
-}
-
-.onlineControl__decor:before {
-    top: 1rem;
-    left: -3rem;
-}
-
-.onlineControl__decor:after {
-    top: 1rem;
-    right: -3rem;
 }
 
 .onlineControl__video {
