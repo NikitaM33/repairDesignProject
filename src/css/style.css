@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
 }
 
 a {
@@ -122,4 +123,90 @@ button {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+
+
+.onlineControl__form,
+.request__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlineControl__fieldset,
+.request__fieldset,
+.onlineControl__input,
+.request__input {
+    border: none;
+    outline: none;
+}
+
+.onlineControl__name,
+.request__name {
+    font-size: var(--O8);
+}
+
+.onlineControl__input::placeholder,
+.request__input::placeholder {
+    font-size: var(--O87);
+}
+
+.onlineControl__submit,
+.request__submit {
+    width: 10rem;
+}
+
+.onlineControl__agreement,
+.request__agreement {
+    position: relative;
+    display: flex;
+}
+
+.onlineControl__fancyCheckbox,
+.request__fancyCheckbox {
+    position: absolute;
+    display: flex;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-left: -1.5rem;
+    background: var(--gold);
+    border-radius: var(--R1);
+    cursor: pointer;
+}
+
+.onlineControl__fancyCheckbox:after,
+.request__fancyCheckbox:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url(../assets/img/check.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: var(--mainTransition);
+}
+
+.onlineControl__agreement input,
+.request__agreement input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.onlineControl__agreement input:checked + .onlineControl__fancyCheckbox:after,
+.request__agreement input:checked + .request__fancyCheckbox:after {
+    opacity: 1;
+}
+
+.onlineControl__agreement input:focus + .onlineControl__fancyCheckbox,
+.request__agreement input:focus + .request__fancyCheckbox:after {
+    box-shadow: 0 0 5px var(--subText);
 }

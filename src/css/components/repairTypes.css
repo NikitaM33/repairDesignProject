@@ -6,6 +6,13 @@
     color: var(--mainBlack);
 }
 
+.repairTypes__types {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -14,7 +21,7 @@
 }
 
 .card__header {
-    width: 100%;
+    width: 93%;
 }
 
 .card__header img {
@@ -27,7 +34,7 @@
 .card__body {
     position: relative;
     width: 16vw;
-    margin: -10rem 0 0 0;
+    margin: -7rem 0 0 0;
     padding: 1.5rem 2rem 3rem;
     background: var(--white);
     box-shadow: 10px 10px 15px var(--superLightGrey);
