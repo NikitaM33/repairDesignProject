@@ -93,3 +93,7 @@
     padding: 1.5rem;
     color: var(--text);
 }
+
+.onlineControl__submit {
+    width: 10rem;
+}

@@ -56,7 +56,7 @@ button {
 .mainButton {
     color: var(--white);
     background: var(--gold);
-    box-shadow: 0 0 15px rgba(227, 184, 115, 0.2);
+    box-shadow: var(--btnShadow);
 }
 
 .mainButton:hover {
@@ -151,11 +151,6 @@ button {
 .onlineControl__input::placeholder,
 .request__input::placeholder {
     font-size: var(--O87);
-}
-
-.onlineControl__submit,
-.request__submit {
-    width: 10rem;
 }
 
 .onlineControl__agreement,

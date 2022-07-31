@@ -27,13 +27,20 @@
 .request__reasons {
     display: flex;
     justify-content: center;
-    padding: 0 0 0 15rem;
+    padding: 0 0 0 14rem;
 }
 
 .request__reasons ul li {
     display: flex;
     align-items: center;
     padding: 2.8rem 0;
+    font-size: var(--O87);
+}
+
+.request__reasons p {
+    max-width: 20rem;
+    margin-left: 0.5rem;
+    color: var(--text);
 }
 
 .request__number {
@@ -52,15 +59,8 @@
     box-shadow: 0 5px 15px var(--superLightGrey);
 }
 
-.request__reasons p {
-    max-width: 23rem;
-    margin-left: 0.5rem;
-    color: var(--text);
-}
-
 .request__requestForm {
-    padding: 1.8rem 2rem;
-    background: var(--mainBlack);
+    flex: 0 0 40%;
 }
 
 .request__form {
@@ -68,7 +68,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 1.8rem 0 0.8rem;
     color: var(--white);
+    background: var(--mainBlack);
 }
 
 .request__form p {
@@ -77,12 +80,16 @@
     text-align: center;
 }
 
+.request__userData {
+    width: 75%;
+}
+
 .request__fieldset {
     margin: 0 0 3rem 0;
     padding: 0;
 }
 
-.request__fieldset:nth-child(2) {
+.request__fieldset:nth-child(3) {
     margin: 0 0 1.5rem 0;
 }
 
@@ -102,4 +109,45 @@
 .request__agreement {
     font-size: var(--O87);
     margin: 0 0 2rem 1.5rem;
+}
+
+.request__callBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.request__submit {
+    width: 12rem;
+}
+
+.request__discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.request__pigIcon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    padding: 0.9rem 0.8rem;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: var(--btnShadow);
+}
+
+.request__pigIcon svg:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.request__discount p {
+    max-width: 13rem;
+    color: var(--gold);
+    text-shadow: 0 0 10px var(--superLightGrey);
 }
