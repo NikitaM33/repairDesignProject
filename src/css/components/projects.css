@@ -80,7 +80,7 @@
     transition: var(--mainTransition);
 }
 
-.projects__citys a:after {
+/* .projects__citys a:after {
     position: absolute;
     bottom: -0.5rem;
     left: 0;
@@ -89,15 +89,13 @@
     height: 1px;
     background: var(--gold);
     transition: var(--mainTransition);
-}
+} */
 
-.projects__citys a:hover {
-    color: var(--gold);
-}
 
-.projects__citys a:hover:after {
+
+/* .projects__citys a:hover:after {
     width: 100%;
-}
+} */
 
 .projects__roomExample {
     width: 100%;

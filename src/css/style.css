@@ -11,6 +11,28 @@ a {
     text-decoration: none;
 }
 
+a:after,
+li a:after {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: var(--mainTransition);
+}
+
+a:hover,
+li a:hover {
+    color: var(--gold);
+}
+
+a:hover:after,
+li a:hover:after {
+    width: 100%;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -124,8 +146,6 @@ button {
     font-weight: 400;
     text-transform: uppercase;
 }
-
-
 
 .onlineControl__form,
 .request__form {

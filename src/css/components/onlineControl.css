@@ -81,7 +81,7 @@
     margin-right: 2rem;
     padding: 0.5rem 0;
     color: var(--text);
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey) !important;
 }
 
 .onlineControl__input::placeholder {
