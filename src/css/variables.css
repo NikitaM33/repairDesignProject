@@ -12,6 +12,7 @@
     --whiteActive: #ffffff9d;
     --lightGrey: #cecece;
     --superLightGrey: #00000008;
+    --linerDarkToner: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 
 
     /* Text sizes */

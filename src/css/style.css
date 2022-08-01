@@ -150,14 +150,16 @@ button {
 
 .onlineControl h4,
 .repairTypes h4,
-.clients__container h4 {
+.clients__container h4,
+.questions__form h4 {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .onlineControl__form,
-.request__form {
+.request__form,
+.questions__requestForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,30 +168,36 @@ button {
 
 .onlineControl__fieldset,
 .request__fieldset,
+.questions__fieldset,
 .onlineControl__input,
-.request__input {
+.request__input,
+.questions__input {
     border: none;
     outline: none;
 }
 
 .onlineControl__name,
-.request__name {
+.request__name,
+.questions__name {
     font-size: var(--O8);
 }
 
 .onlineControl__input::placeholder,
-.request__input::placeholder {
+.request__input::placeholder,
+.questions__input:placeholder {
     font-size: var(--O87);
 }
 
 .onlineControl__agreement,
-.request__agreement {
+.request__agreement,
+.questions__agreement {
     position: relative;
     display: flex;
 }
 
 .onlineControl__fancyCheckbox,
-.request__fancyCheckbox {
+.request__fancyCheckbox,
+.questions__fancyCheckbox {
     position: absolute;
     display: flex;
     width: 0.9rem;
@@ -201,7 +209,8 @@ button {
 }
 
 .onlineControl__fancyCheckbox:after,
-.request__fancyCheckbox:after {
+.request__fancyCheckbox:after,
+.questions__fancyCheckbox:after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -218,7 +227,8 @@ button {
 }
 
 .onlineControl__agreement input,
-.request__agreement input {
+.request__agreement input,
+.questions__agreement input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -226,11 +236,67 @@ button {
 }
 
 .onlineControl__agreement input:checked + .onlineControl__fancyCheckbox:after,
-.request__agreement input:checked + .request__fancyCheckbox:after {
+.request__agreement input:checked + .request__fancyCheckbox:after,
+.questions__agreement input:checked + .questions__fancyCheckbox:after  {
     opacity: 1;
 }
 
 .onlineControl__agreement input:focus + .onlineControl__fancyCheckbox,
-.request__agreement input:focus + .request__fancyCheckbox:after {
+.request__agreement input:focus + .request__fancyCheckbox:after,
+.questions__agreement input:focus + .questions__fancyCheckbox:after {
     box-shadow: 0 0 5px var(--subText);
+}
+
+.request__form,
+.questions__requestForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.8rem 0 0.8rem;
+    color: var(--white);
+    background: var(--mainBlack);
+}
+
+.request__userData,
+.questions__userData {
+    width: 75%;
+}
+
+.request__fieldset,
+.questions__fieldset {
+    margin: 0 0 3rem 0;
+    padding: 0;
+}
+
+.request__fieldset:nth-child(3),
+.questions__fieldset:nth-child(3) {
+    margin: 0 0 1.5rem 0;
+}
+
+.request__name,
+.questions__name {
+    color: var(--whiteActive);
+}
+
+.request__input,
+.questions__input {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    color: var(--white);
+    background: var(--mainBlack);
+    border-bottom: 1px solid var(--whiteHover) !important;
+}
+
+.request__agreement,
+.questions__agreement {
+    font-size: var(--O87);
+    margin: 0 0 2rem 1.5rem;
+}
+
+.request__submit,
+.questions__submit {
+    width: 12rem;
 }

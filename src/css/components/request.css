@@ -63,61 +63,15 @@
     flex: 0 0 40%;
 }
 
-.request__form {
+.request__callBtn {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1.8rem 0 0.8rem;
-    color: var(--white);
-    background: var(--mainBlack);
+    justify-content: flex-end;
 }
 
 .request__form p {
     max-width: 13rem;
     margin: 0 0 2.5rem 0;
     text-align: center;
-}
-
-.request__userData {
-    width: 75%;
-}
-
-.request__fieldset {
-    margin: 0 0 3rem 0;
-    padding: 0;
-}
-
-.request__fieldset:nth-child(3) {
-    margin: 0 0 1.5rem 0;
-}
-
-.request__name {
-    color: var(--whiteActive);
-}
-
-.request__input {
-    width: 100%;
-    padding: 0.5rem 0;
-    font-weight: 400;
-    color: var(--white);
-    background: var(--mainBlack);
-    border-bottom: 1px solid var(--whiteHover) !important;
-}
-
-.request__agreement {
-    font-size: var(--O87);
-    margin: 0 0 2rem 1.5rem;
-}
-
-.request__callBtn {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.request__submit {
-    width: 12rem;
 }
 
 .request__discount {

@@ -31,6 +31,10 @@
     transition: var(--mainTransition);
 }
 
+.repairStyles__styleExamples li a:hover {
+    color: var(--gold);
+}
+
 .repairStyles__styleGalery {
     position: relative;
     display: grid;
