@@ -11,8 +11,7 @@ a {
     text-decoration: none;
 }
 
-a:after,
-li a:after {
+a:after {
     position: absolute;
     bottom: -0.5rem;
     left: 0;
@@ -23,13 +22,11 @@ li a:after {
     transition: var(--mainTransition);
 }
 
-a:hover,
-li a:hover {
+a:hover {
     color: var(--gold);
 }
 
-a:hover:after,
-li a:hover:after {
+a:hover:after {
     width: 100%;
 }
 
@@ -104,12 +101,23 @@ button {
 }
 
 .onlineControl__container,
-.repairTypes__container {
+.repairTypes__container,
+.clients__container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.repairTypes__container,
+.clients__container {
+    padding: 8rem 0;
+}
+
+.repairTypes h4,
+.clients__container h4 {
+    color: var(--mainBlack);
 }
 
 .onlineControl__decor,
@@ -141,7 +149,8 @@ button {
 }
 
 .onlineControl h4,
-.repairTypes h4 {
+.repairTypes h4,
+.clients__container h4 {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     text-transform: uppercase;

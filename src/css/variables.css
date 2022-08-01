@@ -2,6 +2,7 @@
     --mainBlack: #131313;
     --text: #363636;
     --subText: #36363680;
+    --greyText: #959595;
     --grey: #36363660;
     --gold: #E3B873;
     --goldHover: #e3b873e0;
@@ -33,5 +34,6 @@
 
 
     /* Shadows */
-    --btnShadow: 0 0 15px rgba(227, 184, 115, 0.2);
+    --btnShadow: 0 0 15px rgba(227, 184, 115, 0.4);
+    --darkShadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

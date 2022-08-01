@@ -1,11 +1,3 @@
-.repairTypes__container {
-    padding: 8rem 0;
-}
-
-.repairTypes h4 {
-    color: var(--mainBlack);
-}
-
 .repairTypes__types {
     display: flex;
     align-items: center;

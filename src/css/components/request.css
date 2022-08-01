@@ -139,13 +139,6 @@
     box-shadow: var(--btnShadow);
 }
 
-.request__pigIcon svg:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .request__discount p {
     max-width: 13rem;
     color: var(--gold);
