@@ -51,11 +51,91 @@ button {
 
 .header__logo a,
 .header__navigation li a,
-.header__phone a {
+.header__phone a,
+.footer__phone a {
     font-weight: 300;
     font-size: var(--O87);
     text-transform: uppercase;
 }
+
+
+
+
+.header,
+.footer {
+    padding: 1.5rem 0;
+    background: var(--mainBlack);
+}
+
+.header__container,
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a,
+.footer__logo a {
+    color: var(--gold);
+}
+
+.header__navigation ul,
+.footer__navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation li,
+.footer__navigation li {
+    margin-right: 1vw;
+}
+
+.header__navigation li:last-child,
+.footer__navigation li:last-child {
+    margin-right: 0;
+}
+
+.header__navigation li a,
+.footer__navigation li a {
+    color: var(--white);
+    transition: var(--mainTransition);
+}
+
+.header__navigation li a:hover,
+.footer__navigation li a:hover {
+    color: var(--gold);
+}
+
+.header__phone,
+.footer__phone {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone a,
+.footer__phone a {
+    color: var(--gold);
+    text-decoration: underline;
+    transition: var(--mainTransition);
+}
+
+.header__phone a:hover,
+.footer__phone a:hover {
+    color: var(--white);
+}
+
+.header__phone button,
+.footer__phone button {
+    margin-left: 2.5rem;
+}
+
+
+
+
+
+
+
 
 .mainButton,
 .borderedButton {
@@ -151,10 +231,12 @@ button {
 .onlineControl h4,
 .repairTypes h4,
 .clients__container h4,
-.questions__form h4 {
+.questions__form h4,
+.questions__coordinates p {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .onlineControl__form,
@@ -299,4 +381,93 @@ button {
 .request__submit,
 .questions__submit {
     width: 12rem;
+}
+
+@media screen and (max-width: 1270px) {
+    .projects__container {
+        flex-direction: column;
+    }
+
+    .projects__descr {
+        padding: 5rem 0 0;
+    }
+
+    .projects__descr h3 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: var(--mobileBtnText);
+    }
+
+    .projects__descr p {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: var(--mobileText);
+    }
+
+    .projects__parametrs,
+    .projects__citys {
+        display: none;
+    }
+
+    .projects__arrowsContainer {
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileScreen {
+        display: block;
+        margin: 0 0 4rem 0;
+    }
+
+    .mobileScreen span {
+        font-size: var(--mobileBtnText);
+    }
+
+    .mobileScreen p {
+        font-size: var(--mobileText);
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .header__requestBtn,
+    .footer__requestBtn {
+        display: none;
+    }
+
+    .onlineControl__container h4 {
+        font-size: var(--mobileBtnText);
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .header__navigation ul {
+        display: none;
+    }
+
+    .bunner__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bunner__bannerText p {
+        font-size: var(--mobileText);
+    }
+
+    .bunner__callToActionBtn {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bunner__calculateBtn,
+    .mainButton,
+    .borderedButton  {
+        max-width: 100%;
+        width: 100%;
+        height: 5rem;
+        margin: 1.5rem 0;
+        font-size: var(--mobileBtnText);
+    }
 }

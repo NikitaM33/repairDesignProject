@@ -9,12 +9,15 @@
 
 .clients__reviewCards {
     display: flex;
-    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .review {
     max-width: 25.5rem;
     padding: 1.8rem 1.5rem 6rem;
+    margin: 0 0 2rem;
     box-shadow: var(--darkShadow);
 }
 
@@ -82,4 +85,10 @@
     font-weight: 400;
     color: var(--white);
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1185px) {
+    .clients__reviewCards {
+        /* flex-wrap: wrap; */
+    }
 }

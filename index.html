@@ -93,6 +93,97 @@
                 </p>
               </div>
 
+              <div class="projects__parametrs">
+                <div class="projects__descrRow">
+                  <div class="project__part">
+                    <span class="project__descrName">City:</span>
+                    <p class="project__descrText">Rostov-on-Don LCD admiral</p>
+                  </div>
+                  <div class="project__part">
+                    <span class="project__descrName">Apartment area:</span>
+                    <p class="project__descrText">81 m2</p>
+                  </div>
+                </div>
+                <div class="projects__descrRow">
+                  <div class="project__part">
+                    <span class="project__descrName">Repair time:</span>
+                    <p class="project__descrText">3.5 months</p>
+                  </div>
+                  <div class="project__part">
+                    <span class="project__descrName">Repair Cost:</span>
+                    <p class="project__descrText">Upon request</p>
+                  </div>
+                </div>
+                <div class="projects__control">
+                  <div class="projects__controlContainer">
+                    <div class="projects__arrow">
+                      <div class="projects__left"></div>
+                    </div>
+                    <div class="projects__dots">
+                      <div class="projects__dot"></div>
+                      <div class="projects__dot"></div>
+                      <div class="projects__dot"></div>
+                    </div>
+                    <div class="projects__arrow">
+                      <div class="projects__right"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects__photosExemples">
+              <div class="projects__citys">
+                <a href="#"> Rostov-on-Don, Admiral </a>
+                <a href="#"> Sochi Thieves </a>
+                <a href="#"> Rostov-on-Don Patriotic </a>
+              </div>
+              <div class="projects__slider">
+                <div class="projects__roomExample">
+                  <img src="./src/assets/img/portfolio.png" alt="Room" />
+                </div>
+                <div class="projects__arrowsContainer">
+                  <div class="projects__arrowslider">
+                    <svg
+                      width="8"
+                      height="14"
+                      viewBox="0 0 8 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.56569 12.478L1.08689 6.99975L6.56569 1.52147L7.34778 2.30348L2.65107 6.99975L7.34778 11.696L6.56569 12.478Z"
+                        fill="white"
+                        stroke="white"
+                        stroke-width="0.75"
+                      />
+                    </svg>
+                  </div>
+                  <div class="projects__arrowslider">
+                    <svg
+                      width="8"
+                      height="14"
+                      viewBox="0 0 8 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.43431 1.52197L6.91311 7.00025L1.43431 12.4785L0.652222 11.6965L5.34894 7.00025L0.652222 2.30399L1.43431 1.52197Z"
+                        fill="white"
+                        stroke="white"
+                        stroke-width="0.75"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects__parametrs mobileScreen">
               <div class="projects__descrRow">
                 <div class="project__part">
                   <span class="project__descrName">City:</span>
@@ -112,33 +203,6 @@
                   <span class="project__descrName">Repair Cost:</span>
                   <p class="project__descrText">Upon request</p>
                 </div>
-              </div>
-
-              <div class="projects__control">
-                <div class="projects__controlContainer">
-                  <div class="projects__arrow">
-                    <div class="projects__left"></div>
-                  </div>
-                  <div class="projects__dots">
-                    <div class="projects__dot"></div>
-                    <div class="projects__dot"></div>
-                    <div class="projects__dot"></div>
-                  </div>
-                  <div class="projects__arrow">
-                    <div class="projects__right"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="projects__photosExemples">
-              <div class="projects__citys">
-                <a href="#"> Rostov-on-Don, Admiral </a>
-                <a href="#"> Sochi Thieves </a>
-                <a href="#"> Rostov-on-Don Patriotic </a>
-              </div>
-              <div class="projects__roomExample">
-                <img src="./src/assets/img/portfolio.png" alt="Room" />
               </div>
             </div>
           </div>
@@ -1177,32 +1241,37 @@
             <form action="#" class="questions__form">
               <h4>have any questions?</h4>
               <div class="questions__userData">
-                <fieldset class="questions__fieldset">
-                  <legend class="questions__name">Name</legend>
-                  <input
-                    type="text"
-                    class="questions__input"
-                    placeholder="What is your name:"
-                  />
-                </fieldset>
+                <div class="questions__contacts">
+                  <fieldset class="questions__fieldset">
+                    <legend class="questions__name">Name</legend>
+                    <input
+                      type="text"
+                      class="questions__input"
+                      placeholder="What is your name:"
+                    />
+                  </fieldset>
 
-                <fieldset class="questions__fieldset">
-                  <legend class="questions__name">Phone</legend>
-                  <input
-                    type="text"
-                    class="questions__input"
-                    placeholder="Your phone number:"
-                  />
-                </fieldset>
+                  <fieldset class="questions__fieldset">
+                    <legend class="questions__name">Phone</legend>
+                    <input
+                      type="text"
+                      class="questions__input"
+                      placeholder="Your phone number:"
+                    />
+                  </fieldset>
+                </div>
 
-                <fieldset class="questions__fieldset">
-                  <legend class="questions__name">Email</legend>
-                  <input
-                    type="text"
-                    class="questions__input"
-                    placeholder="Your email:"
-                  />
-                </fieldset>
+                <div class="questions__ask">
+                  <fieldset class="questions__fieldset">
+                    <legend class="questions__name">Question</legend>
+                    <input
+                      type="text"
+                      class="questions__input"
+                      placeholder="I want to know:"
+                    />
+                  </fieldset>
+                </div>
+
                 <div class="questions__agreement">
                   <label>
                     <input type="checkbox" />
@@ -1210,18 +1279,117 @@
                     I agree to the processing of personal data
                   </label>
                 </div>
+
                 <div class="questions__callBtn">
-                  <button class="questions__submit mainButton">
-                    Call the measurer
-                  </button>
+                  <button class="questions__submit mainButton">Submit</button>
                 </div>
               </div>
             </form>
           </div>
         </div>
+
+        <div class="questions__coordinates">
+          <p>
+            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928)
+            768 32 29
+          </p>
+          <div class="questions__socials">
+            <a href="#">
+              <div class="questions__mail">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.4 1.12158H13.6C14.37 1.12158 15 1.75158 15 2.52158V10.9216C15 11.6916 14.37 12.3216 13.6 12.3216H2.4C1.63 12.3216 1 11.6916 1 10.9216V2.52158C1 1.75158 1.63 1.12158 2.4 1.12158Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 2.52197L8 7.42197L1 2.52197"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="questions__instagram">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1H4C2.34315 1 1 2.34315 1 4V10C1 11.6569 2.34315 13 4 13H10C11.6569 13 13 11.6569 13 10V4C13 2.34315 11.6569 1 10 1Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M9.40002 6.62218C9.47407 7.12153 9.38877 7.63151 9.15627 8.07959C8.92377 8.52767 8.55591 8.89103 8.105 9.11798C7.65408 9.34494 7.14309 9.42394 6.64469 9.34374C6.14629 9.26354 5.68588 9.02823 5.32892 8.67128C4.97197 8.31432 4.73666 7.85391 4.65646 7.35551C4.57626 6.85711 4.65526 6.34612 4.88222 5.89521C5.10917 5.44429 5.47253 5.07643 5.92061 4.84393C6.36869 4.61143 6.87867 4.52613 7.37802 4.60018C7.88737 4.67571 8.35893 4.91306 8.72304 5.27716C9.08714 5.64127 9.32449 6.11283 9.40002 6.62218Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="questions__map">
+          <img src="./src/assets/img/map.png" alt="Map" />
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <a href="/">IC "Repair design project"</a>
+          </div>
+          <nav class="footer__navigation">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Measurment</a>
+              </li>
+              <li>
+                <a href="#">Team</a>
+              </li>
+              <li>
+                <a href="#">Rewiews</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__phone">
+            <a href="#">+7 (928) 768-32-39</a>
+            <button class="footer__requestBtn mainButton">
+              Request a call
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -58,7 +58,7 @@
 }
 
 .project__descrText {
-    max-width: 7rem;
+    max-width: 8rem;
 }
 
 .projects__photosExemples {
@@ -80,22 +80,32 @@
     transition: var(--mainTransition);
 }
 
-/* .projects__citys a:after {
+.projects__slider {
+    position: relative;
+}
+
+.projects__arrowsContainer {
+    display: none;
     position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    content: '';
-    width: 0;
-    height: 1px;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.projects__arrowslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
     background: var(--gold);
-    transition: var(--mainTransition);
-} */
+    border-radius: 50%;
+}
 
-
-
-/* .projects__citys a:hover:after {
-    width: 100%;
-} */
+.projects__arrowslider svg {
+    width: auto;
+    height: 1.5rem;
+}
 
 .projects__roomExample {
     width: 100%;
@@ -108,6 +118,8 @@
     object-position: center;
 }
 
+
+
 .projects__control {
     display: flex;
     justify-content: center;
@@ -116,6 +128,10 @@
 .projects__controlContainer {
     display: flex;
     align-items: center;
+}
+
+.mobileScreen {
+    display: none;
 }
 
 .projects__dots {
@@ -199,4 +215,3 @@
     right: -3px;
     transform: rotate(45deg);
 }
-
