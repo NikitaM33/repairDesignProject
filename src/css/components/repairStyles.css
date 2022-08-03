@@ -91,3 +91,7 @@
     object-fit: cover;
     object-position: center;
 }
+
+.repairStyles__sliderContainer {
+    display: none;
+}

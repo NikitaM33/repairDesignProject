@@ -195,7 +195,7 @@ button {
     padding: 8rem 0;
 }
 
-.repairTypes h4,
+.repairTypes h3,
 .clients__container h4 {
     color: var(--mainBlack);
 }
@@ -229,7 +229,7 @@ button {
 }
 
 .onlineControl h4,
-.repairTypes h4,
+.repairTypes h3,
 .clients__container h4,
 .questions__form h4,
 .questions__coordinates p {
@@ -239,7 +239,6 @@ button {
     text-align: center;
 }
 
-.onlineControl__form,
 .request__form,
 .questions__requestForm {
     display: flex;
@@ -383,6 +382,18 @@ button {
     width: 12rem;
 }
 
+.projects__roomExample {
+    width: 100%;
+}
+
+.projects__roomExample img,
+.repairStyles__roomExample img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media screen and (max-width: 1270px) {
     .projects__container {
         flex-direction: column;
@@ -436,8 +447,163 @@ button {
         display: none;
     }
 
+    .onlineControl {
+        background: var(--mainBlack);
+    }
+
     .onlineControl__container h4 {
         font-size: var(--mobileBtnText);
+    }
+
+    .onlineControl__video {
+        width: 100vw;
+    }
+
+    .onlineControl__playBtn {
+        width: 9vw;
+        height: 10.2vw;
+    }
+
+    .onlineControl__hr {
+        height: 2px;
+    }
+
+    .onlineControl__text p {
+        color: var(--white);
+    }
+
+    .onlineControl__form {
+        flex-direction: column;
+    }
+
+    .onlineControl__userData {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .onlineControl__name,
+    .onlineControl__input,
+    .onlineControl__agreement {
+        font-size: var(--mobileText);
+        color: var(--white);
+    }
+
+    .onlineControl__input {
+        width: 28rem;
+        margin: 0 0 3rem 0;
+        border-bottom: 1px solid var(--white) !important;
+    }
+
+    .onlineControl__input::placeholder {
+        color: var(--greyText);
+    }
+
+    .onlineControl__fieldset:nth-child(2) input {
+        margin: 0 0 0 0;
+    }
+
+    .onlineControl__agreement {
+        padding: 1.5rem 0 0 2.3rem;
+    }
+
+    .onlineControl__submit {
+        width: 100%;
+        height: 4rem;
+        margin: 0 0 -2rem 0;
+    }
+
+    .mainButton {
+        max-width: 100%;
+        z-index: 2;
+    }
+
+    .repairTypes__types {
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: baseline;
+        margin: 0 0 4rem;
+    }
+
+    .request {
+        display: none;
+    }
+
+    .repairStyles {
+        background: var(--mainBlack);
+    }
+
+    .repairStyles__container {
+        flex-direction: column;
+    }
+
+    .repairStyles__styleExamples {
+        margin: -10rem 0 3rem;
+        padding: 0;
+    }
+
+    .repairStyles__styleExamples h3 {
+        max-width: 15rem;
+        margin: 0 auto;
+        font-size: var(--mobileBtnText);
+        text-align: center;
+    }
+
+    .repairStyles__styleExamples ul {
+        display: none;
+    }
+
+    .repairStyles__styleGalery {
+        display: none;
+    }
+
+    .repairStyles__sliderContainer {
+        display: flex;
+        justify-content: center;
+        margin: 0rem 0 5rem;
+    }
+
+    .repairStyles__slider {
+        position: relative;
+        width: 38rem;
+    }
+
+    .repairStyles__roomExample {
+        height: 100%;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .questions {
+        background: var(--mainBlack);
+        margin: 0;
+    }
+
+    .questions__requestForm {
+        margin: 0;
+    }
+
+    .questions__submit {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .questions__contancts {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+
+    .questions__map {
+        margin: 0 0 0;
+    }
+
+    .footer {
+        display: none;
     }
 }
 
@@ -469,5 +635,26 @@ button {
         height: 5rem;
         margin: 1.5rem 0;
         font-size: var(--mobileBtnText);
+    }
+
+    .onlineControl__input {
+        width: 23rem;
+    }
+
+    .card__body  {
+        width: 50vw;
+    }
+
+    .projects__arrowslider {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .repairStyles__sliderContainer {
+        margin: 0rem 0 2rem;
+    }
+
+    .questions__map {
+        width: 100%;
     }
 }

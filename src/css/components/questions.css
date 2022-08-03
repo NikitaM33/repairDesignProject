@@ -50,6 +50,13 @@
     margin: 3rem auto 1rem;
 }
 
+.questions__contancts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .questions__coordinates {
     padding: 2rem 0;
 }
